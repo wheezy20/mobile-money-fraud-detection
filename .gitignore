@@ -1,0 +1,24 @@
+# Data files - too big for git
+data/raw/*.csv
+data/processed/*.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Conda/venv
+.venv/
+venv/
+
+# MLflow
+mlruns/
+
+# Kaggle credentials
+kaggle.json
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
