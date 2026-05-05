@@ -1,17 +1,22 @@
 # Data files - too big for git
-data/raw/*.csv
-data/processed/*.csv
+data/
+
+# Trained models - regenerable, sometimes large
+models/*.pkl
+models/*.joblib
 
 # Python
 __pycache__/
 *.pyc
+*.pyo
 .ipynb_checkpoints/
 
 # Conda/venv
 .venv/
 venv/
+.conda/
 
-# MLflow
+# MLflow tracking
 mlruns/
 
 # Kaggle credentials
@@ -22,3 +27,4 @@ kaggle.json
 
 # OS
 .DS_Store
+Thumbs.db
