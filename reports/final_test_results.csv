@@ -1,0 +1,2 @@
+model,n_test_samples,n_test_fraud,pr_auc,roc_auc,f1_default_threshold,precision_default,recall_default,recall_at_90_precision,threshold_at_90_precision,tp,fp,fn,tn,cost_weighted_5_to_1
+Tuned Random Forest (9 features),415562,1232,0.9980079742879365,0.999184345615406,0.9971579374746244,0.9975629569455727,0.9967532467532467,0.997564935064935,0.026561492814290533,1228,3,4,414327,23.0
