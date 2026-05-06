@@ -1,0 +1,10 @@
+# Mobile Money Fraud Detection API - production dependencies
+# Pinned to specific versions for reproducibility
+
+fastapi==0.136.1
+uvicorn==0.46.0
+pydantic==2.13.3
+joblib==1.5.3
+numpy==2.4.4
+pandas==2.3.3
+scikit-learn==1.8.0

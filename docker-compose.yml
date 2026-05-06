@@ -1,0 +1,23 @@
+# docker-compose.yml
+# Convenience wrapper for running the fraud detection API.
+# Use:
+#   docker compose up -d        # start in background
+#   docker compose logs -f      # follow logs
+#   docker compose down         # stop and remove
+
+services:
+  fraud-api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: fraud-detection-api:1.0
+    container_name: fraud-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health').read()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s

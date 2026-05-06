@@ -1,0 +1,45 @@
+# Data — too big and not needed at runtime
+data/
+
+# All trained models except the one we need
+models/baseline_*.pkl
+models/tuned_rf_with_recipient.pkl
+
+# MLflow tracking
+mlruns/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Conda/venv
+.venv/
+venv/
+.conda/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+
+# Notebooks (we don't run training inside this image)
+notebooks/
+
+# Reports (not needed in the runtime container)
+reports/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation that doesn't need to ship
+README.md
+docs/
+
+# Tests live alongside code; that's fine. Keep them.
